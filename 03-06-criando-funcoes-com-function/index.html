@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function greet() {
+      console.log(this);
+    }
+
+    const me = {
+      name: 'john',
+      greet() {
+        console.log(this);
+        return 'greeted';
+      }
+    }
+  </script>
+</body>
+
+</html>
