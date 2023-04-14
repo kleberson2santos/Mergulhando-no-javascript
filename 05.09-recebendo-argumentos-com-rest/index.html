@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recebendo argumentos com rest operator</title>
+</head>
+
+<body>
+  <script>
+    // function createUser(name, age, contact1, contact2, contact3) {
+    //   return {
+    //     name,
+    //     age,
+    //     contacts: [contact1, contact2, contact3]
+    //   }
+    // }
+
+    // function createUser(name, age, contact1, contact2, contact3) {
+    //   console.log(arguments);
+    //   const args = Array.from(arguments);
+    //   return {
+    //     name,
+    //     age,
+    //     contacts: args.slice(2)
+    //   };
+    // }
+
+    function createUser(name, age, ...contacts) {
+      return {
+        name,
+        age,
+        contacts
+      };
+    }
+  </script>
+</body>
+
+</html>
